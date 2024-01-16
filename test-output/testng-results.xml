@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-16T13:17:32 SAST" name="Default suite" finished-at="2024-01-16T13:17:41 SAST" duration-ms="8775">
+    <groups>
+    </groups>
+    <test started-at="2024-01-16T13:17:32 SAST" name="Default test" finished-at="2024-01-16T13:17:41 SAST" duration-ms="8775">
+      <class name="testcases.FirstTestcase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.FirstTestcase@4c583ecf]" started-at="2024-01-16T13:17:33 SAST" name="setUp" finished-at="2024-01-16T13:17:40 SAST" duration-ms="7922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ReadMeTest()[pri:0, instance:testcases.FirstTestcase@4c583ecf]" started-at="2024-01-16T13:17:40 SAST" name="ReadMeTest" finished-at="2024-01-16T13:17:41 SAST" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadMeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.FirstTestcase@4c583ecf]" started-at="2024-01-16T13:17:41 SAST" name="tearDown" finished-at="2024-01-16T13:17:41 SAST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.FirstTestcase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
