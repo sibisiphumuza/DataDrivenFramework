@@ -18,9 +18,7 @@ public class TestBase {
 	
 	public static WebDriver driver;
 	public static Properties configProp = new Properties();
-	public static Properties locators = new Properties();
 	public static FileReader configReader;
-	public static FileReader locatorsReader;
 	
 	@BeforeMethod	
 	public void setUp()
@@ -30,10 +28,8 @@ public class TestBase {
 			try 
 			{
 				FileReader configFr = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\config.properties");	
-				FileReader locatorFr = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\locators.properties");
 				
 				configProp.load(configFr);	
-				locators.load(locatorFr);
 				
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
@@ -45,13 +41,13 @@ public class TestBase {
 		{
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-			driver.get(configProp.getProperty("testurl")+configProp.getProperty("profile"));
+			driver.get(configProp.getProperty("testurl"));
 		}
 		else if (configProp.getProperty("browser").equalsIgnoreCase("firefox"))
 		{
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
-			driver.get(configProp.getProperty("testurl")+configProp.getProperty("profile"));
+			driver.get(configProp.getProperty("testurl"));
 		}
 	}
 	
