@@ -21,11 +21,11 @@ public class ReadXlsData {
 		
 		try {
 			String exclSheetName = m.getName();
-			System.out.println(exclSheetName);
+			System.out.println("sheetname: " + exclSheetName);
 			
 			//Get the file from its location.
 			File workbook = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\sauceDemoLoginTestData.xlsx");
-			System.out.println(workbook.getName());
+			System.out.println("workbook: " + workbook.getName());
 						
 			FileInputStream inputStream = new FileInputStream(workbook);
 			

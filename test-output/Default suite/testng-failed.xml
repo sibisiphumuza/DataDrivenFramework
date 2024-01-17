@@ -5,7 +5,7 @@
     <classes>
       <class name="testcases.TCAutomationLoginTests">
         <methods>
-          <include name="verifyEmailFieldFormat"/>
+          <include name="verifyLandingPages" invocation-numbers="1 5"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

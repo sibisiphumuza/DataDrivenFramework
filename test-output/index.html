@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse-1820720613\testng-customsuite.xml</span>
+                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse-366232238\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.TCAutomationLoginTests" class="method navigator-link" hash-for-method="verifyEmailFieldFormat(junk junk, secret_sauce)">verifyEmailFieldFormat(junk junk, secret_sauce)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.TCAutomationLoginTests" class="method navigator-link" hash-for-method="verifyEmailFieldFormat(Yhg*, secret_sauce)">verifyEmailFieldFormat(Yhg*, secret_sauce)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.TCAutomationLoginTests" class="method navigator-link" hash-for-method="verifyEmailFieldFormat(nonsense, secret_sauce)">verifyEmailFieldFormat(nonsense, secret_sauce)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.SauceDemoLoginTests" class="method navigator-link" hash-for-method="verifyLandingPagesInvalidUser(locked_out_user, secret_sauce)">verifyLandingPagesInvalidUser(locked_out_user, secret_sauce)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -131,31 +121,15 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.TCAutomationLoginTests</span>
+              <span class="class-name">testcases.SauceDemoLoginTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyEmailFieldFormat(junk junk, secret_sauce)">
-                  </a> <!-- verifyEmailFieldFormat(junk junk, secret_sauce) -->
-                  <span class="method-name">verifyEmailFieldFormat</span>
-                  <span class="parameters">(junk junk,secret_sauce)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyEmailFieldFormat(Yhg*, secret_sauce)">
-                  </a> <!-- verifyEmailFieldFormat(Yhg*, secret_sauce) -->
-                  <span class="method-name">verifyEmailFieldFormat</span>
-                  <span class="parameters">(Yhg*,secret_sauce)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyEmailFieldFormat(nonsense, secret_sauce)">
-                  </a> <!-- verifyEmailFieldFormat(nonsense, secret_sauce) -->
-                  <span class="method-name">verifyEmailFieldFormat</span>
-                  <span class="parameters">(nonsense,secret_sauce)</span>
+                  <a name="verifyLandingPagesInvalidUser(locked_out_user, secret_sauce)">
+                  </a> <!-- verifyLandingPagesInvalidUser(locked_out_user, secret_sauce) -->
+                  <span class="method-name">verifyLandingPagesInvalidUser</span>
+                  <span class="parameters">(locked_out_user,secret_sauce)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -163,7 +137,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse-1820720613\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse-366232238\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -172,11 +146,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.TCAutomationLoginTests&quot;&gt;
+      &lt;class name=&quot;testcases.SauceDemoLoginTests&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;verifyEmailFieldFormat&quot;/&gt;
+          &lt;include name=&quot;verifyLandingPagesInvalidUser&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testcases.TCAutomationLoginTests --&gt;
+      &lt;/class&gt; &lt;!-- testcases.SauceDemoLoginTests --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -216,24 +190,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyEmailFieldFormat')
-data.setCell(0, 2, 'testcases.TCAutomationLoginTests')
-data.setCell(0, 3, 835);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyEmailFieldFormat')
-data.setCell(1, 2, 'testcases.TCAutomationLoginTests')
-data.setCell(1, 3, 819);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyEmailFieldFormat')
-data.setCell(2, 2, 'testcases.TCAutomationLoginTests')
-data.setCell(2, 3, 713);
+data.setCell(0, 1, 'verifyLandingPagesInvalidUser')
+data.setCell(0, 2, 'testcases.SauceDemoLoginTests')
+data.setCell(0, 3, 825);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 825 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -252,13 +218,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testcases.TCAutomationLoginTests</span>
+              <span class="ignored-class-name">testcases.SauceDemoLoginTests</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">TermsConditionsTest</span>
+                <span class="ignored-method-name">verifyLandingPages</span>
                 <br/>
-                <span class="ignored-method-name">UsernamePasswordTest</span>
+                <span class="ignored-method-name">verifyTestUsernamePasswordVisibility</span>
                 <br/>
-                <span class="ignored-method-name">ValidRegistrationTest</span>
+                <span class="ignored-method-name">verifyEmailFieldFormat</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -270,42 +236,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.TCAutomationLoginTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.SauceDemoLoginTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyEmailFieldFormat(junk junk, secret_sauce)</span>
-                <span class="method-start">8739 ms</span>
+                <span class="method-name">verifyLandingPagesInvalidUser(locked_out_user, secret_sauce)</span>
+                <span class="method-start">8028 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9580 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">11540 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyEmailFieldFormat(Yhg*, secret_sauce)</span>
-                <span class="method-start">19484 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">20201 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">21730 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyEmailFieldFormat(nonsense, secret_sauce)</span>
-                <span class="method-start">28263 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">29084 ms</span>
+                <span class="method-start">8861 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
