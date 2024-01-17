@@ -1,37 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-17T08:29:59 SAST" name="Default suite" finished-at="2024-01-17T08:30:11 SAST" duration-ms="12528">
+  <suite started-at="2024-01-17T17:28:16 SAST" name="Default suite" finished-at="2024-01-17T17:28:52 SAST" duration-ms="36182">
     <groups>
     </groups>
-    <test started-at="2024-01-17T08:29:59 SAST" name="Default test" finished-at="2024-01-17T08:30:11 SAST" duration-ms="12528">
-      <class name="testcases.SauceDemoLoginTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SauceDemoLoginTests@77888435]" started-at="2024-01-17T08:30:01 SAST" name="setUp" finished-at="2024-01-17T08:30:09 SAST" duration-ms="8026" status="PASS">
+    <test started-at="2024-01-17T17:28:16 SAST" name="Default test" finished-at="2024-01-17T17:28:52 SAST" duration-ms="36182">
+      <class name="testcases.SaucedemoSortTesting">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SaucedemoSortTesting@4218d6a3]" started-at="2024-01-17T17:28:18 SAST" name="setUp" finished-at="2024-01-17T17:28:26 SAST" duration-ms="7980" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLandingPagesInvalidUser(java.lang.String,java.lang.String)[pri:0, instance:testcases.SauceDemoLoginTests@77888435]" started-at="2024-01-17T08:30:09 SAST" name="verifyLandingPagesInvalidUser" data-provider="sauceDemoTestData" finished-at="2024-01-17T08:30:10 SAST" duration-ms="825" status="PASS">
+        <test-method signature="verifySorting(java.lang.String)[pri:0, instance:testcases.SaucedemoSortTesting@4218d6a3]" started-at="2024-01-17T17:28:26 SAST" name="verifySorting" data-provider="sauceDemoTestData" finished-at="2024-01-17T17:28:27 SAST" duration-ms="933" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[locked_out_user]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret_sauce]]>
+                <![CDATA[Name (A to Z)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLandingPagesInvalidUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SauceDemoLoginTests@77888435]" started-at="2024-01-17T08:30:10 SAST" name="tearDown" finished-at="2024-01-17T08:30:11 SAST" duration-ms="1436" status="PASS">
+        </test-method> <!-- verifySorting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SaucedemoSortTesting@4218d6a3]" started-at="2024-01-17T17:28:27 SAST" name="tearDown" finished-at="2024-01-17T17:28:29 SAST" duration-ms="1524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.SauceDemoLoginTests -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SaucedemoSortTesting@4218d6a3]" started-at="2024-01-17T17:28:29 SAST" name="setUp" finished-at="2024-01-17T17:28:34 SAST" duration-ms="5133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySorting(java.lang.String)[pri:0, instance:testcases.SaucedemoSortTesting@4218d6a3]" started-at="2024-01-17T17:28:34 SAST" name="verifySorting" data-provider="sauceDemoTestData" finished-at="2024-01-17T17:28:35 SAST" duration-ms="1017" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Name (Z to A)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySorting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SaucedemoSortTesting@4218d6a3]" started-at="2024-01-17T17:28:35 SAST" name="tearDown" finished-at="2024-01-17T17:28:36 SAST" duration-ms="1275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SaucedemoSortTesting@4218d6a3]" started-at="2024-01-17T17:28:36 SAST" name="setUp" finished-at="2024-01-17T17:28:42 SAST" duration-ms="5308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySorting(java.lang.String)[pri:0, instance:testcases.SaucedemoSortTesting@4218d6a3]" started-at="2024-01-17T17:28:42 SAST" name="verifySorting" data-provider="sauceDemoTestData" finished-at="2024-01-17T17:28:43 SAST" duration-ms="935" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Price (low to high)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySorting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SaucedemoSortTesting@4218d6a3]" started-at="2024-01-17T17:28:43 SAST" name="tearDown" finished-at="2024-01-17T17:28:44 SAST" duration-ms="1318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SaucedemoSortTesting@4218d6a3]" started-at="2024-01-17T17:28:44 SAST" name="setUp" finished-at="2024-01-17T17:28:50 SAST" duration-ms="6123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySorting(java.lang.String)[pri:0, instance:testcases.SaucedemoSortTesting@4218d6a3]" started-at="2024-01-17T17:28:50 SAST" name="verifySorting" data-provider="sauceDemoTestData" finished-at="2024-01-17T17:28:51 SAST" duration-ms="1064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Price (high to low)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySorting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SaucedemoSortTesting@4218d6a3]" started-at="2024-01-17T17:28:51 SAST" name="tearDown" finished-at="2024-01-17T17:28:52 SAST" duration-ms="1243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.SaucedemoSortTesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

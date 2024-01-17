@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TCAutomationLoginTests">
+      <class name="testcases.SaucedemoSortTesting">
         <methods>
-          <include name="verifyLandingPages" invocation-numbers="1 5"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="verifySorting" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- testcases.TCAutomationLoginTests -->
+      </class> <!-- testcases.SaucedemoSortTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
