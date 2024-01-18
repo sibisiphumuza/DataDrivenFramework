@@ -42,12 +42,14 @@ public class TestBase {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			driver.get(configProp.getProperty("testurl"));
+			driver.manage().window().maximize();
 		}
 		else if (configProp.getProperty("browser").equalsIgnoreCase("firefox"))
 		{
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			driver.get(configProp.getProperty("testurl"));
+			driver.manage().window().maximize();
 		}
 	}
 	
@@ -56,6 +58,7 @@ public class TestBase {
 	{
 		driver.close();
 		System.out.println("Teardown successful");
+		//++: --log Successful closing of webdriver.
 	}
 
 }
