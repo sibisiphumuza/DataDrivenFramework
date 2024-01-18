@@ -1,14 +1,13 @@
 package testcases;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.TestBase;
 import utilities.ReadXlsData;
 
-public class SauceDemoLoginTests extends TestBase {
+public class LoginTests extends TestBase {
 
 	@Test(dataProviderClass=ReadXlsData.class,dataProvider="sauceDemoTestData")
 	

@@ -24,7 +24,7 @@ public class ReadXlsData {
 			System.out.println("sheetname: " + exclSheetName);
 			
 			//Get the file from its location.
-			File workbook = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\sauceDemoLoginTestData.xlsx");
+			File workbook = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\SaucedemoTestExecution.xlsx");
 			System.out.println("workbook: " + workbook.getName());
 						
 			FileInputStream inputStream = new FileInputStream(workbook);

@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import base.TestBase;
 import utilities.ReadXlsData;
 
-public class SaucedemoSortTest extends TestBase {
+public class SortTest extends TestBase {
 	
 	@Test(dataProviderClass=ReadXlsData.class,dataProvider="sauceDemoTestData")
 	public static void verifySorting(String selectOptions)
