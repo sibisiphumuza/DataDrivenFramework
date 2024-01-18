@@ -1,14 +1,7 @@
 package testcases;
 
-import java.lang.reflect.Method;
-import java.time.Duration;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -56,13 +49,15 @@ public class AddToCart extends TestBase {
 		LoginStandard_user();
 		
 		//add multiple items
-		driver.findElement(By.xpath("//button[@id='add-to-cart-test.allthethings()-t-shirt-(red)']")).click();		
+		driver.findElement(By.xpath("//button[@id='add-to-cart-test.allthethings()-t-shirt-(red)']")).click();			
 		driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-fleece-jacket']")).click();
 		driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-backpack']")).click();
 		
 		Assert.assertTrue(driver.findElement(By.xpath("//button[@id='remove-test.allthethings()-t-shirt-(red)']")).isDisplayed());
 		Assert.assertTrue(driver.findElement(By.xpath("//button[@id='remove-sauce-labs-fleece-jacket']")).isDisplayed());
 		Assert.assertTrue(driver.findElement(By.xpath("//button[@id='remove-sauce-labs-backpack']")).isDisplayed());
+		
+		//++: -log verification
 	}
 	@Test
 	public static void verifyRemovingMultipleItemsProductPage()
@@ -113,6 +108,7 @@ public class AddToCart extends TestBase {
 		continueShopping();		
 		
 		Assert.assertTrue(driver.findElement(By.xpath("//button[@id='add-to-cart-test.allthethings()-t-shirt-(red)']")).isDisplayed());
+		//++: --log verification
 	}
 
 
@@ -146,8 +142,11 @@ public class AddToCart extends TestBase {
 		continueShopping();
 		
 		Assert.assertTrue(driver.findElement(By.xpath("//button[@id='add-to-cart-test.allthethings()-t-shirt-(red)']")).isDisplayed());
+		//++: --log verification
 		Assert.assertTrue(driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-fleece-jacket']")).isDisplayed());
+		//++: --log verification
 		Assert.assertTrue(driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-backpack']")).isDisplayed());
+		//++: --log verification
 	}
 		
 	public static void LoginStandard_user()
@@ -196,8 +195,7 @@ public class AddToCart extends TestBase {
 	{
 		WebElement cart = driver.findElement(By.xpath("//a[@class='shopping_cart_link']"));
 		//++: --log verification of cart WebElement
-		cart.click();		
-		
+		cart.click();				
 	}
 	
 	public static void continueShopping()
@@ -206,8 +204,7 @@ public class AddToCart extends TestBase {
 		WebElement ContinueShoppingAddButton = driver.findElement(By.xpath("//button[@id='continue-shopping']"));
 		//++: System.out.println(addButton.getText()); -- log 
 		ContinueShoppingAddButton.click();
-		//++: AlladdButton.click(); -- log
-		
+		//++: AlladdButton.click(); -- log		
 	}
 	
 }
