@@ -8,44 +8,49 @@ import base.TestBase;
 import utilities.ReadXlsData;
 
 public class LoginTests extends TestBase {
-
-	@Test(dataProviderClass=ReadXlsData.class,dataProvider="sauceDemoTestData")
 	
-	public static void verifyEmailFieldFormat(String username, String password)
+	@Test(priority=1,dataProviderClass=ReadXlsData.class,dataProvider="saucedemoTestData")
+	
+	public static void verifyLoginInvalidCredentials(String username, String password)
 	{
+		logger.info("verifyLoginInvalidCredentials testcase start...");		
+		
 		driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys(username);
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(password);
 		driver.findElement(By.xpath("//input[@id='login-button']")).click();
 		
 		Assert.assertTrue(driver.findElement(By.xpath("//h3[@data-test='error']")).isDisplayed());
+		logger.info("verifyLoginInvalidCredentials testcase verified.");
+		//++: login verification assertion
 	}
 	
-	@Test
-	public static void verifyTestUsernamePasswordVisibility()
+	@Test(priority=2)
+	public static void verfiyLoginValidCredentials() 
 	{
-		//Are test usernames & passwords displayed.
+		logger.info("verfiyLoginValidCredentials testcase start...");		
+	
 		Assert.assertTrue(driver.findElement(By.xpath("//h4[normalize-space()='Accepted usernames are:']")).isDisplayed());
+		logger.info("usernames testcase verified.");
+		
 		Assert.assertTrue(driver.findElement(By.xpath("//h4[normalize-space()='Password for all users:']")).isDisplayed());
+		logger.info("password testcase verified.");
+		
+		//++: --log verification assertion
 	}
 	
-	@Test(dataProviderClass=ReadXlsData.class,dataProvider="sauceDemoTestData")
-	public static void verifyLandingPages(String username, String password)
+	@Test(priority=3)
+	public static void verifyLandingPagesInvalidUser()
 	{
-		driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys(username);
-		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(password);
+		logger.info("verifyLandingPagesInvalidUser testcase verified.");
+		
+		driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys("locked_out_user");
+		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("secret_sauce");
 		driver.findElement(By.xpath("//input[@id='login-button']")).click();
 		
-		Assert.assertTrue(driver.findElement(By.className("title")).isDisplayed());		
-	}
-	
-	@Test(dataProviderClass=ReadXlsData.class,dataProvider="sauceDemoTestData")
-	public static void verifyLandingPagesInvalidUser(String username, String password)
-	{
-		driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys(username);
-		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(password);
-		driver.findElement(By.xpath("//input[@id='login-button']")).click();
-		
-		Assert.assertTrue(driver.findElement(By.xpath("//h3[@data-test='error']")).isDisplayed());	
-	}
+		Assert.assertTrue(driver.findElement(By.xpath("//h3[@data-test='error']")).isDisplayed());
+		logger.info("verfiyLoginValidCredentials testcase verified.");
 
+		logger.info("verifyLandingPagesInvalidUser testcase verified.");
+		//++: --log verification assertion
+	}		
 }
