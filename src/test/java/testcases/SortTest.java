@@ -9,19 +9,15 @@ import utilities.ReadXlsData;
 
 public class SortTest extends TestBase {
 	
-	@Test(priority=12,dataProviderClass=ReadXlsData.class,dataProvider="saucedemoTestData")
+	@Test(dataProviderClass=ReadXlsData.class,dataProvider="sauceDemoTestData")
 	public static void verifySorting(String selectOptions)
 	{
-		logger.info("Verify sorting testcase start...");
-		
 		driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys("standard_user");
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("secret_sauce");
 		driver.findElement(By.xpath("//input[@id='login-button']")).click();
 		
 		Select drpCountry = new Select(driver.findElement(By.xpath("//select[@class='product_sort_container']")));
 		drpCountry.selectByVisibleText(selectOptions);
-		
-		logger.info("Verify sorting testcase verified.");
 	}
 
 }

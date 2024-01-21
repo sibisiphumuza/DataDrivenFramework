@@ -8,27 +8,30 @@ import org.testng.annotations.Test;
 import base.TestBase;
 
 public class Checkout extends TestBase {
-	@Test(priority=11)
+	@Test
 	public static void verifyCheckout()
 	{		
-		logger.info("Verify checkout testcase start...");		
-		
+		//login into saucedemo
 		driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys("standard_user");
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("secret_sauce");
 		driver.findElement(By.xpath("//input[@id='login-button']")).click();
 		
-		logger.info("Standard_user successfully logged in.");
+		System.out.println("Standard_user successfully logged in.");
+		//++: System.out.println("Standard_user successfully logged in."); -- log
 		
+		//add multiple items into shopping cart
 		driver.findElement(By.xpath("//button[@id='add-to-cart-test.allthethings()-t-shirt-(red)']")).click();		
 		driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-fleece-jacket']")).click();		
 		driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-backpack']")).click();	
 		
-		logger.info("Add 3 items successfully.");
+		//++: System.out.println("Add 3 items successfully."); -- log
+		System.out.println("Add 3 items successfully.");
 		
 		driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
 		driver.findElement(By.xpath("//button[@id='checkout']")).click();
 		
-		logger.info("Add Checkout info.");
+		//++: System.out.println("Add 3 items successfully."); -- log
+		System.out.println("Add Checkout info.");
 		
 		driver.findElement(By.xpath("//input[@id='first-name']")).sendKeys("Checkout");		
 		driver.findElement(By.xpath("//input[@id='last-name']")).sendKeys("Testing");		
@@ -42,14 +45,16 @@ public class Checkout extends TestBase {
 		Assert.assertTrue(driver.findElement(By.xpath("//div[@class='summary_info_label summary_total_label']")).isDisplayed());	
 		Assert.assertTrue(driver.findElement(By.xpath("//button[@id='cancel']")).isDisplayed());	
 		Assert.assertTrue(driver.findElement(By.xpath("//button[@id='finish']")).isDisplayed());
-
-		logger.info("Checkout summary verified");
+		
+		//++: -- log verification
+		System.out.println("verified Checkout summary");
 		
 		driver.findElement(By.xpath("//button[@id='finish']")).click();		
 		
 		Assert.assertTrue(driver.findElement(By.xpath("//span[@class='title']")).isDisplayed());	
 		
-		logger.info("verifyCheckout testcase verified.");
+		//++: -- log verification
+		System.out.println("checkout complete");
 	}
 }
 

@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-18T07:23:01 SAST" name="SaucedemoTesSuite" finished-at="2024-01-18T07:26:01 SAST" duration-ms="180142">
+    <groups>
+    </groups>
+    <test started-at="2024-01-18T07:23:01 SAST" name="Test" finished-at="2024-01-18T07:26:01 SAST" duration-ms="180142">
+      <class name="testcases.Checkout">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.Checkout@7dcf94f8]" started-at="2024-01-18T07:24:28 SAST" name="setUp" finished-at="2024-01-18T07:24:33 SAST" duration-ms="5196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCheckout()[pri:0, instance:testcases.Checkout@7dcf94f8]" started-at="2024-01-18T07:24:33 SAST" name="verifyCheckout" finished-at="2024-01-18T07:24:36 SAST" duration-ms="2801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.Checkout@7dcf94f8]" started-at="2024-01-18T07:24:36 SAST" name="tearDown" finished-at="2024-01-18T07:24:37 SAST" duration-ms="1447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.Checkout -->
+      <class name="testcases.SortTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SortTest@31190526]" started-at="2024-01-18T07:25:28 SAST" name="setUp" finished-at="2024-01-18T07:25:35 SAST" duration-ms="6241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySorting(java.lang.String)[pri:0, instance:testcases.SortTest@31190526]" started-at="2024-01-18T07:25:35 SAST" name="verifySorting" data-provider="sauceDemoTestData" finished-at="2024-01-18T07:25:35 SAST" duration-ms="839" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Name (A to Z)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySorting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SortTest@31190526]" started-at="2024-01-18T07:25:35 SAST" name="tearDown" finished-at="2024-01-18T07:25:37 SAST" duration-ms="1277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SortTest@31190526]" started-at="2024-01-18T07:25:37 SAST" name="setUp" finished-at="2024-01-18T07:25:42 SAST" duration-ms="5433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySorting(java.lang.String)[pri:0, instance:testcases.SortTest@31190526]" started-at="2024-01-18T07:25:42 SAST" name="verifySorting" data-provider="sauceDemoTestData" finished-at="2024-01-18T07:25:43 SAST" duration-ms="1093" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Name (Z to A)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySorting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SortTest@31190526]" started-at="2024-01-18T07:25:43 SAST" name="tearDown" finished-at="2024-01-18T07:25:45 SAST" duration-ms="1368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SortTest@31190526]" started-at="2024-01-18T07:25:45 SAST" name="setUp" finished-at="2024-01-18T07:25:50 SAST" duration-ms="5591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySorting(java.lang.String)[pri:0, instance:testcases.SortTest@31190526]" started-at="2024-01-18T07:25:50 SAST" name="verifySorting" data-provider="sauceDemoTestData" finished-at="2024-01-18T07:25:51 SAST" duration-ms="1031" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Price (low to high)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySorting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SortTest@31190526]" started-at="2024-01-18T07:25:51 SAST" name="tearDown" finished-at="2024-01-18T07:25:53 SAST" duration-ms="1277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SortTest@31190526]" started-at="2024-01-18T07:25:53 SAST" name="setUp" finished-at="2024-01-18T07:25:58 SAST" duration-ms="5512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySorting(java.lang.String)[pri:0, instance:testcases.SortTest@31190526]" started-at="2024-01-18T07:25:58 SAST" name="verifySorting" data-provider="sauceDemoTestData" finished-at="2024-01-18T07:25:59 SAST" duration-ms="1077" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Price (high to low)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySorting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SortTest@31190526]" started-at="2024-01-18T07:25:59 SAST" name="tearDown" finished-at="2024-01-18T07:26:01 SAST" duration-ms="1579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.SortTest -->
+      <class name="testcases.AddToCart">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:24:37 SAST" name="setUp" finished-at="2024-01-18T07:24:42 SAST" duration-ms="5063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAddSingleItem()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:24:42 SAST" name="verifyAddSingleItem" finished-at="2024-01-18T07:24:43 SAST" duration-ms="1024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddSingleItem -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:24:43 SAST" name="tearDown" finished-at="2024-01-18T07:24:44 SAST" duration-ms="1333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:24:44 SAST" name="setUp" finished-at="2024-01-18T07:24:50 SAST" duration-ms="5982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAddingMultipleItems()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:24:50 SAST" name="verifyAddingMultipleItems" finished-at="2024-01-18T07:24:52 SAST" duration-ms="1455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddingMultipleItems -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:24:52 SAST" name="tearDown" finished-at="2024-01-18T07:24:53 SAST" duration-ms="1178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:24:53 SAST" name="setUp" finished-at="2024-01-18T07:24:59 SAST" duration-ms="5478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRemoveSingleItemProductPage()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:24:59 SAST" name="verifyRemoveSingleItemProductPage" finished-at="2024-01-18T07:25:00 SAST" duration-ms="1261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRemoveSingleItemProductPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:25:00 SAST" name="tearDown" finished-at="2024-01-18T07:25:01 SAST" duration-ms="1178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:25:01 SAST" name="setUp" finished-at="2024-01-18T07:25:06 SAST" duration-ms="5444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRemovingMultipleItemsFromCart()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:25:06 SAST" name="verifyRemovingMultipleItemsFromCart" finished-at="2024-01-18T07:25:09 SAST" duration-ms="2737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRemovingMultipleItemsFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:25:09 SAST" name="tearDown" finished-at="2024-01-18T07:25:11 SAST" duration-ms="1392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:25:11 SAST" name="setUp" finished-at="2024-01-18T07:25:16 SAST" duration-ms="5258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRemovingMultipleItemsProductPage()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:25:16 SAST" name="verifyRemovingMultipleItemsProductPage" finished-at="2024-01-18T07:25:17 SAST" duration-ms="1513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRemovingMultipleItemsProductPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:25:17 SAST" name="tearDown" finished-at="2024-01-18T07:25:19 SAST" duration-ms="1821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:25:19 SAST" name="setUp" finished-at="2024-01-18T07:25:25 SAST" duration-ms="5595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRemovingSingleItemsFromCart()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:25:25 SAST" name="verifyRemovingSingleItemsFromCart" finished-at="2024-01-18T07:25:27 SAST" duration-ms="1995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRemovingSingleItemsFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AddToCart@229f66ed]" started-at="2024-01-18T07:25:27 SAST" name="tearDown" finished-at="2024-01-18T07:25:28 SAST" duration-ms="1496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.AddToCart -->
+      <class name="testcases.LoginTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:03 SAST" name="setUp" finished-at="2024-01-18T07:23:11 SAST" duration-ms="7685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyEmailFieldFormat(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:11 SAST" name="verifyEmailFieldFormat" data-provider="sauceDemoTestData" finished-at="2024-01-18T07:23:12 SAST" duration-ms="767" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[junk junk]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFieldFormat -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:12 SAST" name="tearDown" finished-at="2024-01-18T07:23:13 SAST" duration-ms="1665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:13 SAST" name="setUp" finished-at="2024-01-18T07:23:20 SAST" duration-ms="6476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyEmailFieldFormat(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:20 SAST" name="verifyEmailFieldFormat" data-provider="sauceDemoTestData" finished-at="2024-01-18T07:23:20 SAST" duration-ms="701" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Yhg*]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFieldFormat -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:20 SAST" name="tearDown" finished-at="2024-01-18T07:23:22 SAST" duration-ms="1361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:22 SAST" name="setUp" finished-at="2024-01-18T07:23:28 SAST" duration-ms="6103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyEmailFieldFormat(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:28 SAST" name="verifyEmailFieldFormat" data-provider="sauceDemoTestData" finished-at="2024-01-18T07:23:29 SAST" duration-ms="683" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonsense]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailFieldFormat -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:29 SAST" name="tearDown" finished-at="2024-01-18T07:23:30 SAST" duration-ms="1419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:30 SAST" name="setUp" finished-at="2024-01-18T07:23:36 SAST" duration-ms="5393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLandingPages(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:36 SAST" name="verifyLandingPages" data-provider="sauceDemoTestData" finished-at="2024-01-18T07:23:36 SAST" duration-ms="791" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLandingPages -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:36 SAST" name="tearDown" finished-at="2024-01-18T07:23:38 SAST" duration-ms="1470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:38 SAST" name="setUp" finished-at="2024-01-18T07:23:44 SAST" duration-ms="6478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLandingPages(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:44 SAST" name="verifyLandingPages" data-provider="sauceDemoTestData" finished-at="2024-01-18T07:23:45 SAST" duration-ms="746" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLandingPages -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:45 SAST" name="tearDown" finished-at="2024-01-18T07:23:46 SAST" duration-ms="1432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:46 SAST" name="setUp" finished-at="2024-01-18T07:23:52 SAST" duration-ms="5168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLandingPages(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:52 SAST" name="verifyLandingPages" data-provider="sauceDemoTestData" finished-at="2024-01-18T07:23:57 SAST" duration-ms="5797" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLandingPages -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:57 SAST" name="tearDown" finished-at="2024-01-18T07:23:59 SAST" duration-ms="1280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:23:59 SAST" name="setUp" finished-at="2024-01-18T07:24:04 SAST" duration-ms="5337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLandingPages(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:24:04 SAST" name="verifyLandingPages" data-provider="sauceDemoTestData" finished-at="2024-01-18T07:24:05 SAST" duration-ms="827" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[error_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLandingPages -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:24:05 SAST" name="tearDown" finished-at="2024-01-18T07:24:06 SAST" duration-ms="1444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:24:06 SAST" name="setUp" finished-at="2024-01-18T07:24:12 SAST" duration-ms="5209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLandingPages(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:24:12 SAST" name="verifyLandingPages" data-provider="sauceDemoTestData" finished-at="2024-01-18T07:24:12 SAST" duration-ms="752" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[visual_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLandingPages -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:24:12 SAST" name="tearDown" finished-at="2024-01-18T07:24:13 SAST" duration-ms="1215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:24:14 SAST" name="setUp" finished-at="2024-01-18T07:24:19 SAST" duration-ms="5350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLandingPagesInvalidUser(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:24:19 SAST" name="verifyLandingPagesInvalidUser" data-provider="sauceDemoTestData" finished-at="2024-01-18T07:24:20 SAST" duration-ms="675" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLandingPagesInvalidUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:24:20 SAST" name="tearDown" finished-at="2024-01-18T07:24:21 SAST" duration-ms="1482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:24:21 SAST" name="setUp" finished-at="2024-01-18T07:24:26 SAST" duration-ms="5123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyTestUsernamePasswordVisibility()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:24:26 SAST" name="verifyTestUsernamePasswordVisibility" finished-at="2024-01-18T07:24:26 SAST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTestUsernamePasswordVisibility -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTests@3590fc5b]" started-at="2024-01-18T07:24:26 SAST" name="tearDown" finished-at="2024-01-18T07:24:28 SAST" duration-ms="1257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LoginTests -->
+    </test> <!-- Test -->
+  </suite> <!-- SaucedemoTesSuite -->
+</testng-results>

@@ -5,8 +5,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
@@ -15,26 +13,19 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.annotations.DataProvider;
 
-import testcases.LoginTests;
-
 public class ReadXlsData {
 
-	private static Logger logger = LogManager.getLogger(ReadXlsData.class.getName()); 
-	
-	@DataProvider(name="saucedemoTestData")
+	@DataProvider(name="sauceDemoTestData")
 	public String[][] getData(Method m)
 	{
 		
 		try {
-			String exclSheetName = m.getName();			
+			String exclSheetName = m.getName();
+			System.out.println("sheetname: " + exclSheetName);
 			
 			//Get the file from its location.
 			File workbook = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\testdata\\SaucedemoTestExecution.xlsx");
-			
-			System.out.println();
-			logger.info("Workbook: " + workbook.getName());
-			logger.info("Sheetname: " + exclSheetName);			
-			System.out.println();
+			System.out.println("workbook: " + workbook.getName());
 						
 			FileInputStream inputStream = new FileInputStream(workbook);
 			
