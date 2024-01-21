@@ -1,18 +1,57 @@
     <?xml version="1.0" encoding="UTF-8"?>
-    <Configuration status="WARN">
-      <Appenders>
-        <Console name="STDOUT" target="SYSTEM_OUT">
-          <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>         
-        </Console>
-         <File name="file fileName="C:\\Library\\I - Jan - March Automation\\LoginModulesAutomation\\src\\test\\resources\\logs\\" append=true>
-		 <PatternLayout>
-		 < pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n<pattern /> 
-      </Appenders>
-      <Loggers>
-      <logger name="com.ps" level="all" additivity="true">
-      <AppenderRef ref="STDOUT"/>
-        <Root level="all">
-          <AppenderRef ref="STDOUT"/>
-        </Root>
-      </Loggers>
-    </Configuration>
+<configuration monitorinterval="60">
+	<properties>
+		<property name="log-path">logs</property>
+		<property name="archive">${log-path}/archive</property>
+	</properties>
+	<appenders>
+		<console name="Console-Appender" target="SYSTEM_OUT">
+			<patternlayout>
+				<pattern>
+					[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+				</pattern>
+				>
+            </patternlayout>
+		</console>
+		<file name="File-Appender" filename="${log-path}/saucedemoLogs.log">
+			<patternlayout>
+				<pattern>
+					[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+				</pattern>
+			</patternlayout>
+		</file>
+		<rollingfile 
+		name="RollingFile-Appender"
+			filename="${log-path}/rollingfile.log"
+			filepattern="${archive}/rollingfile.log.%d{yyyy-MM-dd-hh-mm}.gz">
+			<patternlayout
+				pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n">
+				<policies>
+					<timebasedtriggeringpolicy>
+						<sizebasedtriggeringpolicy size="30 MB">
+						</sizebasedtriggeringpolicy>
+					</timebasedtriggeringpolicy>
+				</policies>
+				<defaultrolloverstrategy max="30">
+				</defaultrolloverstrategy>
+			</patternlayout>
+		</rollingfile>
+	</appenders>
+	<loggers>
+		<logger 
+			name="saucedemoLogger.log4j2xml" 
+			level="debug"
+			additivity="false">
+			<appenderref ref="File-Appender" level="error">
+				<appenderref ref="RollingFile-Appender" level="info">
+					<appenderref ref="Console-Appender" level="debug">
+					</appenderref>
+				</appenderref>
+			</appenderref>
+		</logger>
+		<root level="debug">
+			<appenderref ref="Console-Appender">
+			</appenderref>
+		</root>
+	</loggers>
+</configuration>
