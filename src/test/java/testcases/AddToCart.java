@@ -5,13 +5,17 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 import base.TestBase;
 
 public class AddToCart extends TestBase {
 
 	@Test(priority = 5)
 	public static void verifyAddSingleItem() {
+		
 		logger.info("Verify add single item testcase start...");
+		extentTest.log(LogStatus.INFO, "Verify add single item testcase start...");
 
 		// login into sauce-demo
 		LoginStandard_user();
@@ -22,6 +26,7 @@ public class AddToCart extends TestBase {
 				driver.findElement(By.xpath("//button[@id='remove-test.allthethings()-t-shirt-(red)']")).isDisplayed());
 
 		logger.info("Verify add single item testcase verified.");
+		extentTest.log(LogStatus.PASS, "Verify add single item testcase verified.");
 		// ++: log Assert verification
 
 	}
@@ -29,7 +34,9 @@ public class AddToCart extends TestBase {
 	// FIXME: Would be better with test data.
 	@Test(priority = 6)
 	public static void verifyRemoveSingleItemProductPage() {
+		
 		logger.info("Verify removing single item testcase start...");
+		extentTest.log(LogStatus.INFO, "Verify removing single item testcase start...");
 
 		LoginStandard_user();
 
@@ -42,29 +49,37 @@ public class AddToCart extends TestBase {
 		wait.until(d -> rmvBtn.isDisplayed());
 
 		logger.info(adIitmDscrpt + " added to cart.");
+		extentTest.log(LogStatus.PASS, adIitmDscrpt + " added to cart.");
 
 		Assert.assertTrue(rmvBtn.isDisplayed());
-		logger.info(adIitmDscrpt + " removed from cart.");
+		logger.info(adIitmDscrpt + " added to cart.");
+		extentTest.log(LogStatus.PASS, adIitmDscrpt + " removed from cart.");
 
 		logger.info("Removing single item verified.");
+		extentTest.log(LogStatus.PASS, "Removing single item verified.");
 		// ++: --log Assert verification
 	}
 
 	// FIXME: Would be better with test data.
 	@Test(priority = 7)
 	public static void verifyAddingMultipleItems() {
+		
 		logger.info("Verify adding multiple items testcase started...");
+		extentTest.log(LogStatus.PASS, "Verify adding multiple items testcase started...");
 
 		LoginStandard_user();
 		AddMultipleItemsToCart();
 
 		logger.info("Adding multiple items testcase verified...");
+		extentTest.log(LogStatus.PASS, "Adding multiple items testcase verified...");
 	}
 
 	// FIXME: Would be better with test data.
 	@Test(priority = 8)
 	public static void verifyRemovingMultipleItemsProductPage() {
+		
 		logger.info("Verify Removing Multiple Items in the Product Page testcase start...");
+		extentTest.log(LogStatus.PASS, "Verify Removing Multiple Items in the Product Page testcase start...");
 
 		// login into sauce-demo
 		LoginStandard_user();
@@ -76,6 +91,7 @@ public class AddToCart extends TestBase {
 		Assert.assertTrue(driver.findElement(By.xpath("//button[@id='add-to-cart-test.allthethings()-t-shirt-(red)']")).isDisplayed());
 		
 		logger.info(driver.findElement(By.xpath("//div[normalize-space()='Test.allTheThings() T-Shirt (Red)']")).getText() + " added & then removed from cart.");
+		extentTest.log(LogStatus.PASS, driver.findElement(By.xpath("//div[normalize-space()='Test.allTheThings() T-Shirt (Red)']")).getText() + " added & then removed from cart.");
 
 		// ==============================================================================================================================================================
 
@@ -84,6 +100,7 @@ public class AddToCart extends TestBase {
 		driver.findElement(By.xpath("//button[@id='remove-sauce-labs-fleece-jacket']")).click();
 
 		Assert.assertTrue(driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-fleece-jacket']")).isDisplayed());
+		extentTest.log(LogStatus.PASS, driver.findElement(By.xpath("//div[normalize-space()='Sauce Labs Fleece Jacket']")).getText() + " added & then removed from cart.");
 		logger.info(driver.findElement(By.xpath("//div[normalize-space()='Sauce Labs Fleece Jacket']")).getText() + " added & then removed from cart.");
 
 		// ===============================================================================================================================================================
@@ -93,6 +110,7 @@ public class AddToCart extends TestBase {
 		driver.findElement(By.xpath("//button[@id='remove-sauce-labs-backpack']")).click();
 
 		Assert.assertTrue(driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-backpack']")).isDisplayed());
+		extentTest.log(LogStatus.PASS, driver.findElement(By.xpath("//div[normalize-space()='Sauce Labs Backpack']")).getText() + " added & then removed from cart.");
 		logger.info(driver.findElement(By.xpath("//div[normalize-space()='Sauce Labs Backpack']")).getText() + " added & then removed from cart.");
 
 		// ===============================================================================================================================================================
@@ -100,6 +118,7 @@ public class AddToCart extends TestBase {
 
 	@Test(priority = 9)
 	public static void verifyRemovingSingleItemsFromCart() {
+		extentTest.log(LogStatus.PASS, "Verify removing a singleiItem from cart testcase start...");
 		logger.info("Verify removing a singleiItem from cart testcase start...");
 
 		// ??: find out more about Work/page-flows.
@@ -109,6 +128,7 @@ public class AddToCart extends TestBase {
 
 		WebElement cartItemDscrpt = driver.findElement(By.xpath("//div[@class='inventory_item_name']"));
 		Assert.assertTrue(cartItemDscrpt.isDisplayed());
+		extentTest.log(LogStatus.PASS, cartItemDscrpt + " item found in the shopping cart.");
 		logger.info(cartItemDscrpt + " item found in the shopping cart.");
 
 		driver.findElement(By.xpath("//button[@id='remove-test.allthethings()-t-shirt-(red)']")).click();
@@ -119,11 +139,13 @@ public class AddToCart extends TestBase {
 		Assert.assertTrue(driver.findElement(By.xpath("//button[@id='add-to-cart-test.allthethings()-t-shirt-(red)']"))
 				.isDisplayed());
 
+		extentTest.log(LogStatus.PASS, "Verify removing a singleiItem from cart testcase verified.");
 		logger.info("Verify removing a singleiItem from cart testcase verified.");
 	}
 
 	@Test(priority = 10)
 	public static void verifyRemovingMultipleItemsFromCart() {
+		extentTest.log(LogStatus.PASS, "Verify removing multiple items from cart testcase start...");
 		logger.info("Verify removing multiple items from cart testcase start...");
 
 		// login into saucedemo
@@ -146,20 +168,23 @@ public class AddToCart extends TestBase {
 
 		Assert.assertTrue(driver.findElement(By.xpath("//button[@id='add-to-cart-test.allthethings()-t-shirt-(red)']"))
 				.isDisplayed());
+		extentTest.log(LogStatus.PASS, "Item removed successfully.");
 		logger.info("Item removed successfully.");
 		// ++: --log verification
 		Assert.assertTrue(
 				driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-fleece-jacket']")).isDisplayed());
+		extentTest.log(LogStatus.PASS, "Item removed successfully.");
 		logger.info("Item removed successfully.");
 		// ++: --log verification
 		Assert.assertTrue(
 				driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-backpack']")).isDisplayed());
+		extentTest.log(LogStatus.PASS, "Item removed successfully.");
 		logger.info("Item removed successfully.");
 		// ++: --log verification
 
 		// ===============================================================================================================================================================
 
-		logger.info("Verify removing multiple items from cart testcase verified.");
+		extentTest.log(LogStatus.PASS, "Verify removing multiple items from cart testcase verified.");
 	}
 
 	public static void LoginStandard_user() {
@@ -168,8 +193,8 @@ public class AddToCart extends TestBase {
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("secret_sauce");
 		driver.findElement(By.xpath("//input[@id='login-button']")).click();
 
+		extentTest.log(LogStatus.PASS, "Standard_user successfully logged in.");
 		logger.info("Standard_user successfully logged in.");
-		// ++: System.out.println("Standard_user successfully logged in."); -- log
 	}
 
 	public static void AddSingleItemsToCart() {
@@ -180,6 +205,7 @@ public class AddToCart extends TestBase {
 
 		Assert.assertTrue(
 				driver.findElement(By.xpath("//button[@id='remove-test.allthethings()-t-shirt-(red)']")).isDisplayed());
+		extentTest.log(LogStatus.PASS, "1 item added to cart.");
 		logger.info("1 item added to cart.");
 	}
 
@@ -204,6 +230,7 @@ public class AddToCart extends TestBase {
 		wait.until(d -> allRmvBtn.isDisplayed());
 
 		Assert.assertTrue(allRmvBtn.isDisplayed());
+		extentTest.log(LogStatus.PASS, item1Dscrpt + " added to cart.");
 		logger.info(item1Dscrpt + " added to cart.");
 
 		// ===============================================================================================================================================================
@@ -218,6 +245,7 @@ public class AddToCart extends TestBase {
 		wait.until(d -> fleeceRmvBtn.isDisplayed());
 
 		Assert.assertTrue(fleeceRmvBtn.isDisplayed());
+		extentTest.log(LogStatus.PASS, item2Dscrpt + " added to cart.");
 		logger.info(item2Dscrpt + " added to cart.");
 
 		// ===============================================================================================================================================================
@@ -231,17 +259,20 @@ public class AddToCart extends TestBase {
 		wait.until(d -> labsRmvBtn.isDisplayed());
 
 		Assert.assertTrue(labsRmvBtn.isDisplayed());
+		extentTest.log(LogStatus.PASS, item3Dscrpt + " added to cart.");
 		logger.info(item3Dscrpt + " added to cart.");
 
 	}
 
 	public static void navigateToCart() {
 		driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
+		extentTest.log(LogStatus.PASS, "To cart navigation, successful.");
 		logger.info("To cart navigation, successful.");
 	}
 
 	public static void continueShopping() {
 		driver.findElement(By.xpath("//button[@id='continue-shopping']")).click();
+		extentTest.log(LogStatus.PASS, "Continue shopping, successful.");
 		logger.info("Continue shopping, successful.");
 	}
 
