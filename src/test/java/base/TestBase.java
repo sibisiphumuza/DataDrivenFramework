@@ -26,7 +26,7 @@ import testcases.LoginTests;
 public class TestBase {
 	
 	public static WebDriver driver;
-	public static Logger logger = LogManager.getLogger(LoginTests.class.getName()); 
+	public static Logger logger = LogManager.getLogger(TestBase.class.getName()); 
 	public static Wait<WebDriver> wait;
 	public static Capabilities cap;
 	
@@ -37,6 +37,7 @@ public class TestBase {
 		if (browser.equalsIgnoreCase("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
+			
 			driver = new ChromeDriver();
 			driver.get(testobj);
 			driver.manage().window().maximize();	
@@ -49,6 +50,7 @@ public class TestBase {
 		else if (browser.equalsIgnoreCase("firefox"))
 		{
 			WebDriverManager.firefoxdriver().setup();
+			
 			driver = new FirefoxDriver();
 			driver.get(testobj);
 			driver.manage().window().maximize();
@@ -57,11 +59,11 @@ public class TestBase {
 			
 			cap = ((RemoteWebDriver) driver).getCapabilities();
 			logger.info(cap.getBrowserName() + " Browser Test Begins...");
-			//++: --log successful launch of browser
 		}
 		else if (browser.equalsIgnoreCase("edge"))
 		{
 			WebDriverManager.edgedriver().setup();
+			
 			driver = new EdgeDriver();
 			driver.get(testobj);
 			driver.manage().window().maximize();
