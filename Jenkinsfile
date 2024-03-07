@@ -1,6 +1,6 @@
 pipeline {
     // run on jenkins nodes tha has java 8 label
-    agent { label 'java21' }
+    agent { label 'windows' }
     // global env variables
     environment {
         EMAIL_RECIPIENTS = 'sibisi.ps@gmail.com'
